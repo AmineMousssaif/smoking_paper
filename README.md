@@ -20,7 +20,7 @@ Dit verslag gaat rond roken en de verschillende subonderwerpen hierover. Eerst b
 1. Smoking related lung cancer (csv => converted to => xlsx) [https://www.kaggle.com/datasets/raddar/smoking-related- lung-cancers?resource=download ](https://www.kaggle.com/datasets/raddar/smoking-related-lung-cancers?resource=download)
 1. Smoking dataset from the UK (csv => converted to => txt) [https://www.openintro.org/data/index.php?data=smoking ](https://www.openintro.org/data/index.php?data=smoking)
 
-3\.VRAGEN:
+3.VRAGEN:
 
 1) Is er een verband tussen roken en een lage bmi hebben?
    ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/fc4f5bec-fbc8-4163-9dd3-b903a445f681)
@@ -65,7 +65,7 @@ Hoge stage 2 longkanker wordt meer gevonden bij blanke mannen die nog steeds rok
 
 (Kijk naar model 4.3) 
 
-![ref1] 4.1 ETL VOOR DE CSV FILE: 
+4.1 ETL VOOR DE CSV FILE: 
 
 We beginnen met het inladen van de csv file. Eerst begin ik met het converteren van de age field van string naar integer.  Daarna verwijderen ik de ethnicity kolom omdat deze geen meerwaarde had aan de analyse. Ook heb ik de niet-rokers verwijderd van de dataset omdat ik in mijn onderzoek alleen de rokers wou. Ook verwijder ik de minderjarige omdat ik het verband van inkomen wil vergelijken met wat er gerookt wordt en minderjarigen hebben geen echte inkomen.
 
@@ -77,7 +77,7 @@ Daarna sorteren we de rijen op leeftijd en inkomen. Daaruit crëeren we een SQL 
 ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/cffd6c56-c10f-41b3-834a-0e9a5490bece)
 
 
-![ref1] 4.2 ETL VOOR DE TXT FILE: 
+4.2 ETL VOOR DE TXT FILE: 
 
 ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/7553ecfa-04dc-4ddb-8344-2da8aac4f2b3)
 
@@ -87,7 +87,7 @@ Voor de txt bestand ben ik begonnen met de text file input. Hier moest ik de sep
 ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/4b769be4-f9f0-4c9f-bebd-91a152e768c0)
 
 
-![ref1] 4.3 ETL VOOR DE XLSX FILE: 
+4.3 ETL VOOR DE XLSX FILE: 
 
 ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/5950df53-6bb6-4299-bdc7-a2bc747a8b63)
 
@@ -97,7 +97,7 @@ We beginnen met de microsoft excel input. Daarna heb ik een functie geschreven d
 ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/79c5a96b-a36c-4332-8622-3bcfd045277a)
 
 
-![ref1] 5.DATABANK(DS) 
+5.DATABANK(DS) 
 
 Local:
 
@@ -111,7 +111,7 @@ Aan  de  hand  van  de  sql-file  outputs  heb  ik  de  data  op  mijn  local da
 ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/a2cc92fc-8452-4430-8a8b-aca1fc166ca6)
 
 
-![ref1] 6. CONCLUSIE 
+6. CONCLUSIE 
 
 In dit verslag keken we naar verschillende data uit verschillende landen. De dataset van body signals kwam bijvoorbeeld uit Zuid-Korea en die van dataset\_uk kwam van Engeland. Dit was interessant omdat elke land natuurlijk andere statistieken heeft. 
 
@@ -119,4 +119,3 @@ Om de ruwe data te optimaliseren en te verfijnen, hebben we gebruik gemaakt van 
 
 Aan de hand van de geanalyseerde data heb ik al mijn vragen kunnen beantwoorden en heb ik veel interessante dingen geleerd over roken op veel verschillende manieren. Eerst leek de opdracht moeilijk en had ik veel moeite met het vinden van nuttige datasets, maar na het vinden van de datasets en het leren werken met Pentaho, werd de opdracht heel leuk en interessant. Deze ervaring heeft me sterk gemotiveerd om in de toekomst verder te gaan met data-analyse. 
 
-[ref1]: Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.013.png
