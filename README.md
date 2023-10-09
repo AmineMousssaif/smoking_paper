@@ -11,48 +11,55 @@ VERSLAG R0855381
 
 Roken verslag – Amine Moussaif 
 
-1. INTRODUCTIE: ![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.002.png)
+1. INTRODUCTIE:
 
 Dit verslag gaat rond roken en de verschillende subonderwerpen hierover. Eerst begon ik met het zoeken van drie bruikbare datasets van verschillende formaat. Na een lange tijd zoeken vond ik alleen csv-datasets die bruikbaar waren. Hierdoor heb ik besloten 2 datasets te converteren naar een xlsx-dataset en naar een txt-dataset. Dit heb ik gedaan met de[ https://convertio.co/ ](https://convertio.co/)tool. Alle files die tot dit verslag behoren zijn te vinden op projektwerkt onder mijn persoonlijke repository
 
-2. DATABRONNEN: ![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.003.png)
+2. DATABRONNEN:
 1. Body signals of smoking (csv file) [https://www.kaggle.com/datasets/kukuroo3/body-signal-of- smoking ](https://www.kaggle.com/datasets/kukuroo3/body-signal-of-smoking)
 1. Smoking related lung cancer (csv => converted to => xlsx) [https://www.kaggle.com/datasets/raddar/smoking-related- lung-cancers?resource=download ](https://www.kaggle.com/datasets/raddar/smoking-related-lung-cancers?resource=download)
 1. Smoking dataset from the UK (csv => converted to => txt) [https://www.openintro.org/data/index.php?data=smoking ](https://www.openintro.org/data/index.php?data=smoking)
 
-3\.VRAGEN ![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.004.png)
+3\.VRAGEN:
 
-1) Is er een verband tussen roken en een lage bmi hebben? 
+1) Is er een verband tussen roken en een lage bmi hebben?
+   ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/fc4f5bec-fbc8-4163-9dd3-b903a445f681)
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.005.jpeg)
 
 Aan de hand van deze scatter plot kunnen we zien dat het bij zowel de rokers en niet rokers gelijk verdeeld is. Dit wilt zeggen dat er geen directe verband is. Ik merkte hier ook op dat de meerderheid van de rokers mannen zijn. ( Aan de hand van model in 4.2) 
 
 2) Kunnen we aan de hand van lichaam signalen voorspellen of iemand rookt ? 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.006.png)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/720372cf-5b01-40fc-9e86-643f135d6a72)
+
 
 De classification accuracy die de accuraatheid geeft van de predicties is niet vrij hoog maar ook niet laag. Van alle modellen zien we dat neural network het beste presteert met een CA van 71.7. Dit wilt zeggen dat het model 71.7 % van de tijd heeft kunnen voorspellen of iemand rookt of niet. In deze context zou ik zeggen dat dit niet zeer accuraat is maar wel goed. (Aan de hand van model in 4.2) 
 
 3) Roken mensen zonder diploma/opleiding meer dan mensen met diploma/opleiding zoals de stereotype vertelt? 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.007.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/38c5e385-ed3d-432e-8092-d8f86d40a9ec)
+
 
 Op eerste zicht dacht ik dat het inderdaad zo was, omdat je duidelijk kan zien dat 32.69% van de rokers geen diploma/opleiding heeft. Daarna realiseerde ik me dat als je alle opleidingsniveuas samen optelt, je een percentage bekomt van 67.31% wat veel hoger is dan de mensen zonder opleiding. Dit bewijst dus dat in deze studie mensen met een opleiding/qualificatie meer roken dan de mensen zonder. (kijk 4.1) 
 
 4) Kan kNN voorspellen wat een person rookt(packets, hand-rolled or both) aan de hand van inkomen, opleidingsniveua, enz..? 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.008.png)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/5973a6b0-d258-4e24-8c3b-a86e7eccad74)
+
 
 kNN bekomt een percentage van 71.3% wat in deze context vrij goed is.  (kijk 4.1) 
 
 Ik merkte hier ook op dat mensen met een lager inkomen meer rollen met de hand tegenover de mensen die een hoger inkomen hebben. Deze roken vooral pakjes. (kijk 4.1) 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.009.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/ff910ff4-e384-48ef-8a4d-7803c308bc0a)
+
 
 5) Welke soort mensen heeft stage 2 kanker? 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.010.png) ![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.011.png) ![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.012.png)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/0b270ca7-9e13-4d98-b118-48ea662eac2e)
+ ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/f163920a-7890-40a3-86b4-aa557536539b)
+ ![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/b27fc58d-6145-4e83-98ec-c57fcbc01658)
+
 
 Hoge stage 2 longkanker wordt meer gevonden bij blanke mannen die nog steeds roken. Een belangerijke factor die hier natuurlijk speelt is dat deze data is verzameld in amerika en daar is de meerderheid natuurlijk blank dus is het ook logisch dat dit in de distributie blijkt.  
 
