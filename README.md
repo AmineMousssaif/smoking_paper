@@ -1,4 +1,4 @@
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.001.png)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/9b1111dd-6f59-405c-9ae7-e4f558caa2f2)
 
 VERSLAG R0855381 
 
@@ -69,39 +69,47 @@ Hoge stage 2 longkanker wordt meer gevonden bij blanke mannen die nog steeds rok
 
 We beginnen met het inladen van de csv file. Eerst begin ik met het converteren van de age field van string naar integer.  Daarna verwijderen ik de ethnicity kolom omdat deze geen meerwaarde had aan de analyse. Ook heb ik de niet-rokers verwijderd van de dataset omdat ik in mijn onderzoek alleen de rokers wou. Ook verwijder ik de minderjarige omdat ik het verband van inkomen wil vergelijken met wat er gerookt wordt en minderjarigen hebben geen echte inkomen.
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.014.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/12cef17d-bdb7-4547-a30b-c101295eba3d)
+
 
 Daarna sorteren we de rijen op leeftijd en inkomen. Daaruit crëeren we een SQL file ouput die we daarna gebruiken de data in de database te zetten, en een xml file die we kunnen gebruiken in orange om de data te analyseren 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.015.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/cffd6c56-c10f-41b3-834a-0e9a5490bece)
+
 
 ![ref1] 4.2 ETL VOOR DE TXT FILE: 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.016.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/7553ecfa-04dc-4ddb-8344-2da8aac4f2b3)
+
 
 Voor de txt bestand ben ik begonnen met de text file input. Hier moest ik de seperator veranderen en de fields handmatig ingeven. Daarna heb ik de values gekozen die ik nodig ging hebben. Hierna zag ik dat de weight en height fields alleen niet veel meerwaarde hadden dus heb ik een nieuwe field gecrëerd die de BMI berekent. Daarna heb ik de rijen gesorteerd op leeftijd en heb ik de data geschreven in een excel file die ik kan gebruiken voor analyse in orange en heb ik ook een sql file output toegevoegd zodat ik de nieuwe data kan toevoegen op de analyse databank. 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.017.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/4b769be4-f9f0-4c9f-bebd-91a152e768c0)
+
 
 ![ref1] 4.3 ETL VOOR DE XLSX FILE: 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.018.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/5950df53-6bb6-4299-bdc7-a2bc747a8b63)
+
 
 We beginnen met de microsoft excel input. Daarna heb ik een functie geschreven die de stages van kanker verandert in 0, 1 of 2. Dit is gemakkelijker om straks te analyseren. Ook waren er veel null waardes die ik veranderd heb in een 0. De null values van race heb ik veranderd naar “Other”. Hierna heb ik de kolommen gekozen die ik nodig had en heb ik ook de type van stage\_of\_cancer veranderd naar int omdat deze na de change van null values een string was geworden. Als laatste heb ik een excel writer en een sql output toegevoegd om de data in orange te analyseren en om de data op de analyse database te gooien.  
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.019.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/79c5a96b-a36c-4332-8622-3bcfd045277a)
+
 
 ![ref1] 5.DATABANK(DS) 
 
 Local:
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.020.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/2e83146f-a6a7-454c-ab54-e6d81fd457e4)
+
 
 Aan  de  hand  van  de  sql-file  outputs  heb  ik  de  data  op  mijn  local database kunnen zetten en op de school-database . 
 
 52223: 
 
-![](Aspose.Words.1635f41a-c764-4215-88f3-fd7476c2f449.021.jpeg)
+![image](https://github.com/AmineMousssaif/smoking_paper/assets/71696893/a2cc92fc-8452-4430-8a8b-aca1fc166ca6)
+
 
 ![ref1] 6. CONCLUSIE 
 
